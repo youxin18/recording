@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F6F6F6">
+
+    <TextView
+        android:id="@+id/text_recording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="备忘录"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+    <View
+        android:id="@+id/line_text"
+        android:layout_below="@+id/text_recording"
+        android:layout_width="match_parent"
+        android:background="#C5C4C4"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"/>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2EBF6"
+    android:layout_below="@+id/text_recording"
+    android:layout_above="@+id/bottom"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+</androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+    <ImageView
+        android:id="@+id/me"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/me"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/write"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">随身小记</string>
+
+    <style name="LoginEdit">
+        <item name="android:background">@drawable/borderlogin</item>
+    </style>
+
+    <style name="LoginEdit2">
+        <item name="android:background">@drawable/borderlogingreen</item>
+    </style>
+</resources>

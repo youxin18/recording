@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gezi"
+    >
+    <ImageView
+        android:id="@+id/back_read"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/back_blue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+   <TextView
+       android:id="@+id/read_title"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_below="@+id/back_read"
+       android:textColorHint="#757474"
+       android:hint="12345"
+       android:gravity="center"
+       android:textColor="#000000"
+       android:alpha="0.75"
+       android:textStyle="bold"
+       android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/read_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_option"
+        android:layout_below="@+id/read_title"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:hint="12344556"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7B7B"
+        android:textSize="18sp"
+        android:alpha="0.75"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/save_edit"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/edit_read"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:alpha="0.75"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_option"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/delete_read"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/delete"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
